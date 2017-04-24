@@ -1,0 +1,14 @@
+`timescale 1ns / 1ps
+////////////////////////////////////////////////////////////////////////////////// 
+// Engineer: Hau Tao
+// Create Date:    09:44:04 11/16/2015 
+// Module Name:    mux_EX 
+//////////////////////////////////////////////////////////////////////////////////
+
+module mux_EX( a, b, sel, y);
+     input[4:0] a, b;
+     input sel;
+     output[4:0] y;
+     assign y = sel ? a: b;
+endmodule
+

@@ -1,0 +1,14 @@
+`timescale 100ns / 10ns
+//////////////////////////////////////////////////////////////////////////////////
+// Company:
+// Engineer: Hau Tao
+// Create Date:    22:01:58 10/20/2015
+// Module Name:    MUX
+//////////////////////////////////////////////////////////////////////////////////
+module MUX( a, b, sel, y);
+     input[31:0] a, b;
+     input sel;
+     output[31:0] y;
+     assign y = sel ? a: b;
+endmodule
+

@@ -1,0 +1,17 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: hau tao
+// 
+// Create Date:    15:05:07 12/06/2015 
+// Design Name: 
+// Module Name:    mux_32bit 
+//////////////////////////////////////////////////////////////////////////////////
+module mux_32bit(a,b,sel,y
+    );
+input[31:0] a, b;
+input sel;
+output[31:0] y;
+assign y = sel ? a: b;
+
+endmodule
